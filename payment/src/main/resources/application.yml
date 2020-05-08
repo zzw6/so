@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: payment8080
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://eurekaserver7001.com:7001/eureka/,http://eurekaserver7002.com:7002/eureka/
+  instance:
+    instance-id: payment8080
+    hostname: payment8080
+    prefer-ip-address: true
