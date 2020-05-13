@@ -1,0 +1,11 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: PAYMENT
+  cloud:
+    consul:
+      discovery:
+        service-name: ${spring.application.name}
+        instance-id: PAYMENT
+
